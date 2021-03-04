@@ -1,0 +1,53 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.the-infinity-gauntlet-image {
+  display: block;
+  height: 200px;
+  width: 120px;
+}
+
+.the-infinity-gauntlet-image:hover {
+  cursor: pointer;
+}
+
+.person-shaped-icons-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.person-shaped-icons-list__person {
+	width: 50px;
+	height: 50px;
+}
+
+
+.person-shaped-icons-list:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+.person-shaped-icons-list ~ .person-shaped-icons-list {
+  margin-top: 0;
+}
+
+.person-shaped-icons-list__person {
+  width: 50px;
+  height: 50px;
+}
+
+.person-shaped-icons-list__person-image {
+  width: 100%;
+}
+
+.the-infinity-gauntlet-image:hover ~ .person-shaped-icons-list:nth-of-type(odd) .person-shaped-icons-list__person:nth-child(odd) .person-shaped-icons-list__person-image,
+.the-infinity-gauntlet-image:hover ~ .person-shaped-icons-list:nth-of-type(even) .person-shaped-icons-list__person:nth-child(even) .person-shaped-icons-list__person-image {
+  opacity: 0;
+}

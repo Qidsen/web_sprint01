@@ -1,0 +1,93 @@
+html {
+  font-size: 1vw;
+}
+body {
+  font-size: 16px;
+}
+
+.handbook-section__section-topic,
+.handbook-section__section-subtopic {
+  text-align: center;
+}
+
+.handbook-section__section-topic,
+.handbook-section__section-subtopic,
+.handbook-section__section-block-description,
+.handbook-section__section-block-view-example_div {
+  font-size: 1.3rem;
+}
+
+.handbook-section__section-blocks-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+.handbook-section__section-block {
+  border: .1rem solid #ddd;
+  padding: .8rem;
+  width: 22rem;
+}
+
+.handbook-section__section-block:nth-child(4) ~ .handbook-section__section-block {
+  margin-top: 1.2rem;
+}
+
+.handbook-section__section-block-description {
+  margin-top: 0;
+}
+
+.handbook-section__section-block-description,
+.handbook-section__section-block-view-example {
+  margin-bottom: 0;
+}
+
+.handbook-section__section-block-code-example {
+  font-size: 1rem;
+}
+
+.handbook-section__section-block-view-example_div {
+  border: .1rem solid grey;
+  color: blue;
+}
+
+.handbook-section__section-block-view-example_title {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  html {
+    font-size: 1.3vw;
+  }
+
+  .handbook-section__section-block {
+    width: 36.5rem;
+  }
+
+  .handbook-section__section-block:nth-child(3),
+  .handbook-section__section-block:nth-child(4) {
+    margin-top: 1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  html {
+    font-size: 2.8vw;
+  }
+
+  .handbook-section__section-block {
+    width: 100%;
+  }
+
+  .handbook-section__section-block:nth-child(2) {
+    margin-top: 1.2rem;
+  }
+
+}

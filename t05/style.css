@@ -1,0 +1,32 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+}
+
+#search-form__search-field {
+  color: green;
+  flex: 1;  
+  height: 2em;
+  margin-right: 0;
+  outline: 0;
+}
+
+#search-form__submit-button {
+  color: green;
+  margin-left: 0;
+}
+
+#search-form__submit-button:hover, #search-form__search-field:hover{
+  color:red;
+}
