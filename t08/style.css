@@ -1,0 +1,38 @@
+:root {
+  --circle-size: 400px;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+body {
+  font-size: 16px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.circle {
+  animation: slidein 4s linear infinite alternate;
+  background: green;
+  border-radius: 50%;
+  height: var(--circle-size);
+  transition: background-color 2s ease-in-out;
+  width: var(--circle-size);
+}
+
+.circle:hover {
+  background: red;
+  cursor: pointer;
+}
+
+@keyframes slidein {
+
+  to {
+    margin-left: calc(100% - var(--circle-size));
+  }
+
+}

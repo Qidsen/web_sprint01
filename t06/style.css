@@ -1,0 +1,141 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.6rem source sans pro, sans-serif;
+}
+
+.superhero-form {
+  margin-left: auto;
+  max-width: 88rem;
+}
+
+.superhero-form, .superhero-name {
+  margin-right: auto;
+}
+
+.superhero-heading {
+  color: #f76b87;
+  margin-bottom: 4.5rem;
+}
+
+.superhero-title {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+
+.superhero-title, .superhero-help_needed {
+  text-align: center;
+}
+
+.superhero-title, .superhero-help_needed, .superhero-job_details, .superhero-name, .superhero-email {
+  color: grey;
+}
+
+.superhero-title, .superhero-button_submit {
+  font-weight: bold;
+}
+
+.superhero-block_1, .superhero-block_2, .superhero-block_3 {
+  flex-flow: wrap;
+  justify-content: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.superhero-block_1, .superhero-block_2, .superhero-block_3, .superhero-block_5 {
+  display: flex;
+}
+
+.superhero-checkbox {
+  display: none;
+}
+
+.superhero-help_needed {
+  border: .1rem solid grey;
+  border-radius: 3.4rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  width: 26.5rem;
+}
+
+.superhero-help_needed, .superhero-job_details, .superhero-name, .superhero-email {
+  font-size: 2.1rem;
+}
+
+.superhero-block_1 .superhero-help_needed {
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+}
+
+.superhero-help_needed:hover, .superhero-button_submit:hover {
+  cursor: pointer;
+}
+
+.superhero-checkbox:checked + .superhero-help_needed {
+  transition: background-color .3s ease-in-out, color .3s ease-in;
+}
+
+.superhero-checkbox:checked + .superhero-help_needed, .superhero-button_submit {
+  color: white;
+}
+
+.superhero-checkbox:checked + .superhero-help_needed, .superhero-button_submit:hover {
+  background: #1d2953;
+}
+
+.superhero-checkbox:checked + .superhero-help_needed::after {
+  content: '✓';
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+.superhero-block_2 .superhero-help_needed {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.superhero-block_4 {
+  margin-top: 6rem;
+}
+
+.superhero-job_details, .superhero-name, .superhero-email, .superhero-button_submit {
+  outline: 0;
+}
+
+.superhero-job_details, .superhero-name, .superhero-email {
+  border-bottom: .2rem solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  height: 4rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.superhero-job_details, .superhero-button_submit {
+  width: 100%;
+}
+
+.superhero-block_5 {
+  margin-top: 3.5rem;
+}
+
+.superhero-name, .superhero-email {
+  width: 47%;
+}
+
+.superhero-block_6 {
+  margin-top: 4rem;
+}
+
+.superhero-button_submit {
+  background: #f76b87;
+  border: 0;
+  font-size: 1.5rem;
+  height: 6.5rem;
+  transition: background-color 1s ease-in-out;
+}
