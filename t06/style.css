@@ -117,7 +117,7 @@ body {
 }
 
 .superhero-job_details, .superhero-button_submit {
-  width: 100%;
+  width: 94.5%;
 }
 
 .superhero-block_5 {
@@ -128,14 +128,19 @@ body {
   width: 47%;
 }
 
+.superhero-email {
+  margin-left: 2.5rem;
+}
+
 .superhero-block_6 {
   margin-top: 4rem;
 }
 
 .superhero-button_submit {
+  width: 100%;
   background: #f76b87;
   border: 0;
   font-size: 1.5rem;
   height: 6.5rem;
-  transition: background-color 1s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
 }

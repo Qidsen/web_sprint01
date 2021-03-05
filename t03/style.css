@@ -16,7 +16,7 @@ body {
 }
 
 .heading, .dropdown-item:hover {
-  background: #ed1d26;
+  background: linear-gradient(to right, red, darkred, black);
 }
 
 .heading, .dropdown-item .dropdown-item:hover, .dropdown-item_link:hover > .dropdown-link {
@@ -44,6 +44,7 @@ body {
 }
 
 .dropdown-item {
+  color: black;
   background: #d3d3d3;
   transition: background-color .2s ease-in-out;
 }
